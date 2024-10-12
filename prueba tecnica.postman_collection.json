@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "45ec1878-42c8-4c64-ab3e-9da1cfe2d863",
+		"name": "prueba tecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15110478"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Eliminar Cliente por id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clienteId\": \"cliente006\",\n    \"nombre\": \"Pedro Fernández\",\n    \"saldo\": 500000,\n    \"transacciones\": []\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/clientes/cliente008",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"clientes",
+								"cliente008"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar clientes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clienteId\": \"cliente006\",\n    \"nombre\": \"Pedro Fernández\",\n    \"saldo\": 500000,\n    \"transacciones\": []\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear un cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clienteId\": \"1030\",\n    \"nombre\": \"Francisco Acosta\",    \n    \"transacciones\": []\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar cliente por id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clienteId\": \"cliente006\",\n    \"nombre\": \"Pedro Fernández\",\n    \"saldo\": 500000,\n    \"transacciones\": []\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/clientes/1030",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"clientes",
+								"1030"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Suscribirse a un fondo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"clienteId\": \"cliente009\",\n    \"fondoId\": 5\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/clientes/suscribir",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"clientes",
+								"suscribir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancelacion-suscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clienteId\": \"1030\",\n    \"fondoId\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/clientes/cancelar-suscripcion",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"clientes",
+								"cancelar-suscripcion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fondos",
+			"item": [
+				{
+					"name": "Eliminar Fondo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/fondos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"fondos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Fondo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"fondoId\": 5, \"nombre\": \"FPV_EL_CLIENTE_DINAMICA\", \"montoMinimo\": 100000, \"categoria\": \"FPV\" } ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/fondos",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"fondos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Fondos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/fondos",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"fondos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Fondos por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8083/fondos/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"fondos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transacciones",
+			"item": [
+				{
+					"name": "Obtener todas las transacciones de un cliente",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"clienteId\": \"cliente006\",\n    \"nombre\": \"Pedro Fernández\",\n    \"saldo\": 500000,\n    \"transacciones\": []\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8083/clientes/1030/transacciones",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"clientes",
+								"1030",
+								"transacciones"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
