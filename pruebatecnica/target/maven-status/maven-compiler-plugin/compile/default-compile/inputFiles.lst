@@ -1,0 +1,7 @@
+/Users/franciscoacosta/Documents/pruebatecnica/src/main/java/com/pruebatecnica/pruebatecnica/PruebatecnicaApplication.java
+/Users/franciscoacosta/Documents/pruebatecnica/src/main/java/com/pruebatecnica/pruebatecnica/config/DynamoConfig.java
+/Users/franciscoacosta/Documents/pruebatecnica/src/main/java/com/pruebatecnica/pruebatecnica/controller/UsuarioController.java
+/Users/franciscoacosta/Documents/pruebatecnica/src/main/java/com/pruebatecnica/pruebatecnica/dto/UsuarioDto.java
+/Users/franciscoacosta/Documents/pruebatecnica/src/main/java/com/pruebatecnica/pruebatecnica/model/Usuario.java
+/Users/franciscoacosta/Documents/pruebatecnica/src/main/java/com/pruebatecnica/pruebatecnica/repository/UsuarioRepository.java
+/Users/franciscoacosta/Documents/pruebatecnica/src/main/java/com/pruebatecnica/pruebatecnica/service/UsuarioService.java

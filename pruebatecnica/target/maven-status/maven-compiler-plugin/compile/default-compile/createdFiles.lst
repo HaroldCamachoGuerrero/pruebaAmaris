@@ -1,0 +1,7 @@
+com/pruebatecnica/pruebatecnica/config/DynamoConfig.class
+com/pruebatecnica/pruebatecnica/dto/UsuarioDto.class
+com/pruebatecnica/pruebatecnica/model/Usuario.class
+com/pruebatecnica/pruebatecnica/repository/UsuarioRepository.class
+com/pruebatecnica/pruebatecnica/service/UsuarioService.class
+com/pruebatecnica/pruebatecnica/controller/UsuarioController.class
+com/pruebatecnica/pruebatecnica/PruebatecnicaApplication.class
